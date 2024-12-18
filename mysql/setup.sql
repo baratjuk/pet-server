@@ -1,0 +1,7 @@
+/***CREATING ALL TABLES*/
+CREATE TABLE table1 (
+  id   INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  name1    VARCHAR(40)                    NULL
+);
+
+
