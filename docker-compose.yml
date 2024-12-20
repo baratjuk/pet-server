@@ -18,19 +18,19 @@ services:
      - .env 
     restart: always  
 
-  # ui:
-  #   container_name: ui_v1
-  #   image: node:20
-  #   tty: true
-  #   build: ./ui
-  #   ports:
-  #    - "8080:8080"
-  #   volumes:
-  #    - .:/opt/src 
-  #   working_dir: /opt/src/ui
-  #   env_file:
-  #     - .env  
-  #   restart: always    
+  ui:
+    container_name: ui_v1
+    image: node:20
+    tty: true
+    build: ./ui
+    ports:
+     - "3000:3000"
+    volumes:
+     - .:/opt/src 
+    working_dir: /opt/src/ui
+    env_file:
+      - .env  
+    restart: always    
 
   mysql:
     container_name: mysql_v1
