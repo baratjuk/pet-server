@@ -1,7 +1,6 @@
 FROM node:20
 
-# CMD npm start
-# CMD npm run dev
+CMD node ./src/index.js
 
 
 
