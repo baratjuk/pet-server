@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "prod": "cd /opt/src/api; pm2-runtime src/index.js"
   },
   "main": "index.js"
 }
